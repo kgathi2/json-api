@@ -85,7 +85,7 @@ export const useRequest = <Data = any>({
 
     useEffect(() => {
         // We should not initiate a request in an invalid state,
-        // or if the cache sceheme is `cacheOnly`.
+        // or if the cache scheme is `cacheOnly`.
         if (state.status !== 'loading' || cacheScheme === 'cacheOnly') {
             return;
         }

@@ -9,7 +9,7 @@ import AutoRequestComponent from './__mocks__/AutoRequestComponent';
 import NonJsonApiAutoRequestComponent from './__mocks__/NonJsonApiAutoRequestComponent';
 
 describe('useAutoRequest()', () => {
-    it('It requests and injects a query', async () => {
+    it('requests and injects a query', async () => {
         const { getByText } = render(
             <Provider store={defaultStore}>
                 <AutoRequestComponent />
